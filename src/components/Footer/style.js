@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.footer`
-  height: 150px;
+  height: 10%;
   width: 100%;
-  background: none;
+  background: blue;
   position: absolute;
-  bottom: 0px;
-  left: 0px;
+  top: 90%;
   display: flex;
   z-index: 999;
   flex-direction: column;
@@ -16,7 +15,7 @@ export const Container = styled.footer`
     font-size: 1.5rem;
   }
   @media (max-width: 375px) {
-    height: 75px;
+    height: 10%;
     p {
       font-size: 1rem;
     }

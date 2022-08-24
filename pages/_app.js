@@ -1,31 +1,20 @@
-/* eslint-disable @next/next/no-page-custom-font */
-import Head from "next/head";
-
 import { Provider } from "react-redux";
+import store from "../src/Redux/store";
 
-import themeStore from "../src/store/themeStore";
+import Header from "../src/components/Header";
+import Footer from "../src/components/Footer";
 
-import ThemeMaster from "../styles/themes/themeMaster";
+import GlobalStyleRender from "../styles/GlobalStyle/GlobalStyleRender";
 
-function MyApp({ Component, pageProps }) {
+function App({ Component, pageProps }) {
   return (
-    <Provider store={themeStore}>
-      <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="true"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
-          rel="stylesheet"
-        />
-      </Head>
-      <ThemeMaster />
+    <Provider store={store}>
+      <GlobalStyleRender />
+      <Header />
+      <Footer />
       <Component {...pageProps} />
     </Provider>
   );
 }
 
-export default MyApp;
+export default App;
