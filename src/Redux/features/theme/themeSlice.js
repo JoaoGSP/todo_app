@@ -12,13 +12,17 @@ const darkThemeParams = {
     LightGrayishBlue_Hover: "#e4e5f1",
     DarkGrayish_Blue: "#777a92",
     Text: "#4d5066",
-    VeryDarkGrayish_Blue: "	#393a4c",
+    Lines: "	#393a4c",
   },
 
   images: {
     Bg_Desktop: "/images/bg-desktop-dark.jpg",
     Bg_Mobile: "/images/bg-mobile-dark.jpg",
   },
+
+  icons: {
+    CheckIcon: "/images/check-icon.svg"
+  }
 }
 
 const lightThemeParams = {
@@ -31,13 +35,17 @@ const lightThemeParams = {
     VeryLightGrayish_Blue: "#e4e5f1",
     Light_Grayish_Blue: "#d2d3db",
     Dark_Grayish_Blue: "#9394a5",
-    VeryDarkGrayish_Blue: "#484b6a",
+    Text: "#4d5066",
+    Lines: "#484b6a",
   },
 
   images: {
     Bg_Desktop: "/images/bg-desktop-light.jpg",
     Bg_Mobile: "/images/bg-mobile-light.jpg",
   },
+  icons: {
+    CheckIcon: "/images/check-icon.svg"
+  }
 }
 
 export const slice = createSlice({

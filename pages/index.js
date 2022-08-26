@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import CheckBox from "../src/components/Checkbox";
+import InputComponent from "../src/components/Input";
 
 const ContentWrapper = styled.div`
   display: flex;
@@ -40,14 +40,7 @@ const Header = styled.div`
     }
   }
 `;
-const InputWrapper = styled.div`
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 10%;
-  background-color: purple;
-  margin-top: 5%;
-`;
+
 const TodosWrapper = styled.div`
   display: flex;
   position: relative;
@@ -60,6 +53,7 @@ const TodosWrapper = styled.div`
   }
 `;
 
+
 export default function Home() {
   return (
     <ContentWrapper>
@@ -67,10 +61,7 @@ export default function Home() {
         <h1>TODO</h1>
         <button>Qualquer coisa</button>
       </Header>
-      <InputWrapper>
-        <CheckBox />
-        <input ></input>
-      </InputWrapper>
+      <InputComponent placeholder='Create a new'/>
       <TodosWrapper />
     </ContentWrapper>
   );
